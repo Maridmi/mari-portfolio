@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -17,8 +16,8 @@
     <div class="topnav so-row">
         <a href="/"><img src="img/navlogo.svg"></a>
         <div class="navlist">
-            <a href="/work"><span lang="en">work</span><span lang="ru">работы</span></a>
-            <a href="/services"><span lang="en">services</span><span lang="ru">услуги</span></a>
+            <a href="/work"><span lang="en">works</span><span lang="ru">проекты</span></a>
+            <a href="/about"><span lang="en">about</span><span lang="ru">обо мне</span></a>
             <a href="/contact"><span lang="en">contact</span><span lang="ru">контакты</span></a>
             <form>
                 <select id="lang-switch">
@@ -30,46 +29,32 @@
     </div>
 
     <div class="greetings so-row">
-        <h1 id="show-invisible"><span lang="en">Hi, I'm Marina. <br>I design <span class="h-color">digital products </span><br>that help businesses grow.</span>
-            <span lang="ru">Привет, я Марина <br>Я создаю <span class="h-color">дизайн </span><br>для развития бизнеса.</span></h1>
+        <h1 id="show-invisible"><span lang="en">Hi, I'm Marina</span><span lang="ru">Привет, я Марина</span></h1>
+        <div id="show-invisible" class="greetings-text">
+            <p><span lang="en">/ since <br>2020</span><span lang="ru">/ с 2020 <br>года</span></p>
+            <h1><span lang="en">creative designer</span>
+                <span lang="ru">Я создаю <span class="h-color">дизайн</span></span></h1>
+        </div>
+        <h1 id="show-invisible"><span lang="en">I do <span class="h-color">UI/UX</span> and <span class="h-color">branding</span></span><span lang="ru">для сайтов и брендов</span></h1>
         <p id="invisible">scroll down</p>
-    </div>
-    
-    <div class="latest">
-        <a href="/fanci">
-            <img src="img/fanci/6.jpg">
-            <div class="overlay"></div>
-            <div class="latest-desc">
-                <p class="annotation"><span lang="en">LATEST PROJECT</span>
-                    <span lang="ru">ПОСЛЕДНИЙ ПРОЕКТ</span></p>
-                <div class="latest-name">
-                    <p id="show-invisible"><span lang="en">Fanci Brand Guidelines</span>
-                        <span lang="ru">Fanci Maison</span></p>
-                    <p id="invisible">explore</p>
-                </div>
-            </div>
-        </a>
+        <div class="greet-works">
+            <a href="/works"><img src="img/medeq/1.jpg"></a>
+            <a href="/works"><span lang="en">/ selected<br>works<span style="font-size: 28px;">↴</span></span><span lang="ru">/ избранные<br>проекты<span style="font-size: 28px;">↴</span></span></a>
+        </div>
     </div>
 
     <div class="advantages">
         <div class="advantages-text so-row">
-            <h2><span lang="en">Why design <span class="h-color">matters</span></span>
-                <span lang="ru">Почему дизайн <span class="h-color">важен?</span></span></h2>
-
             <div class="advantages-right">
                 <p><span lang="en">Good design serves a purpose, communicates a message, and is aesthetically pleasing at the same time. Design is everywhere and that's why it's important to make it good. <br><br>My mission is to find design solutions that help to achieve the goals of clients and, ultimately, grow the business.</span>
-                    <span lang="ru">Хороший дизайн служит цели, передает посыл и эстетику компании. Дизайн повсюду, именно поэтому важно сделать его хорошим. <br><br>Моя миссия — находить дизайнерские решения, которые помогают достигать целей клиентов и, в конечном итоге, развивать бизнес.</span></p>
-                <div class="advantages-button-cont">
-                    <a href="/work">
-                        <button class="advantages-button"><span lang="en">VIEW CASES</span><span lang="ru">СМОТРЕТЬ РАБОТЫ</span></button>
-                    </a>
-                </div>
+                    <span lang="ru">Хороший дизайн служит цели, передает посыл и эстетику компании. <br>Дизайн повсюду, именно поэтому важно сделать его хорошим. <br><br>Моя миссия — находить дизайнерские решения, которые помогают достигать целей клиентов и, в конечном итоге, развивать бизнес.</span></p>
+                <a href="/work"><span lang="en">VIEW CASES <span style="font-size: 28px;">↴</span></span><span lang="ru">СМОТРЕТЬ РАБОТЫ <span style="font-size: 28px;">↴</span></span></a>
             </div>
         </div>
 
         <div class="brands">
             <div class="logos">
-                <img src="img/brands/domstroy.svg">
+                <!-- <img src="img/brands/domstroy.svg"> -->
                 <img src="img/brands/a1.svg">
                 <img src="img/brands/borosa.svg">
                 <img src="img/brands/ceyloan.svg">
@@ -88,7 +73,7 @@
                 <img src="img/brands/diar.svg">
             </div>
             <div class="logos">
-                <img src="img/brands/domstroy.svg">
+                <!-- <img src="img/brands/domstroy.svg"> -->
                 <img src="img/brands/a1.svg">
                 <img src="img/brands/borosa.svg">
                 <img src="img/brands/ceyloan.svg">
@@ -109,35 +94,23 @@
         </div>
 
         <div class="more-works so-row">
-            <p class="annotation">EXPLORE SOME OF MY CASE STUDIES</p>
-
-            <div class="more-works-row">
-                <div class="more-works-card">
-                    <a href="/assistent">
-                        <img id="img1" src="img/assistent/1.jpg">
-                    </a>
-                    <div class="more-works-text">
-                        <p>UI/UX</p>
-                        <a href="/assistent"><h3>Assistent Plus</h3></a>
-                        <div class="view-case">
-                            <a href="/assistent">VIEW CASE
-                            <img src="img/arrow.svg"></a>
-                        </div>
-                    </div>
+            <div class="more-works-card">
+                <a href="/silknwool">
+                    <img id="img1" src="img/silkwool/1.jpg">
+                </a>
+                <div class="more-works-text">
+                    <a href="/silknwool"><span lang="en">Silk and Wool Web Design</span><span lang="ru">Веб-дизайн для магазина Шерсть и Шелк</span></a>
+                    <a href="/works"><button class="btn"> UI/UX</button></a>
                 </div>
-                
-                <div class="more-works-card">
-                    <a href="/aes">
-                        <img id="img2" src="img/aes/1.jpg">
-                    </a>
-                    <div class="more-works-text">
-                        <p>UI/UX</p>
-                        <a href="/aes"><h3>American Express Shop</h3></a>
-                        <div class="view-case">
-                            <a href="/aes">VIEW CASE
-                            <img src="img/arrow.svg"></a>
-                        </div>
-                    </div>
+            </div>
+            
+            <div class="more-works-card">
+                <a href="/assistent">
+                    <img id="img2" src="img/assistent/3.jpg">
+                </a>
+                <div class="more-works-text">
+                    <a href="/assistent"><span lang="en">Assistent Plus Web Design</span><span lang="ru">Веб-дизайн для компании Ассистент Плюс</span></a>
+                    <a href="/works"><button class="btn"> UI/UX</button></a>
                 </div>
             </div>
         </div>
@@ -217,7 +190,7 @@
                         <h1>Coleman Legal Web Design</h1>
                         <h4>UI/UX</h4>
                     </div>
-                    <img src="img/cls-web/1.jpg" class="follow-img-2">
+                    <img src="img/cls-web/4.jpg" class="follow-img-2">
                 </a>
             </div>
 
@@ -241,19 +214,35 @@
         </div>
     </div>
 
-    <script language="JavaScript">
-        'use strict'
-
-        var cursor = document.querySelector(".follow-img-1");
-
+    <script>
+        let cursor = document.querySelector(".follow-img-1");
         document.addEventListener("mousemove", (e) => {
 
-        var x = e.clientX;
-        var y = e.clientY;
+        let x = e.clientX;
+        let y = e.clientY;
 
         cursor.style.left = `${x}px`;
         cursor.style.top = `${y}px`;
-        
+        })
+
+        let cursor1 = document.querySelector(".follow-img-2");
+        document.addEventListener("mousemove", (e) => {
+
+        let x1 = e.clientX;
+        let y1 = e.clientY;
+
+        cursor.style.left = `${x1}px`;
+        cursor.style.top = `${y1}px`;
+        })
+
+        let cursor2 = document.querySelector(".follow-img-3");
+        document.addEventListener("mousemove", (e) => {
+
+        let x2 = e.clientX;
+        let y2 = e.clientY;
+
+        cursor.style.left = `${x2}px`;
+        cursor.style.top = `${y2}px`;
         })
     </script>
 
