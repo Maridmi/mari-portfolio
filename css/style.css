@@ -436,20 +436,31 @@ a:hover {
         width: 49.5%;
         display: flex;
         flex-direction: column;
+        display: inline-block; 
+        overflow: hidden;
     }
 
     #img1 {
         width: 100%;
         height: 80vh;
         object-fit: cover; 
-        transition: .5;
+        transition: .5s;
     }
 
     #img2 {
         width: 100%;
         height: 120vh;
         object-fit: cover; 
-        transition: .5;
+        transition: .5s;
+    }
+
+    #img1, #img2 {
+        transition: 0.7s;
+        display: block;
+    }
+    
+    #img1:hover, #img2:hover {
+        transform: scale(1.03);
     }
     
     .more-works-text a {

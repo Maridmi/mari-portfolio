@@ -9,6 +9,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/work.css">
   <link rel="shortcut icon" href="img/navlogo.png" type="image/x-icon">
@@ -18,9 +20,11 @@
     <div class="topnav so-row">
         <a href="/"><img src="img/navlogo.svg"></a>
         <div class="navlist">
-            <a href="/work"><span lang="en">works</span><span lang="ru">проекты</span></a>
-            <a href="/about"><span lang="en">about</span><span lang="ru">обо мне</span></a>
-            <a href="/contact"><span lang="en">contact</span><span lang="ru">контакты</span></a>
+            <div class="nav-links">
+                <a href="/work"><span lang="en">works</span><span lang="ru">проекты</span></a>
+                <a href="/about"><span lang="en">about</span><span lang="ru">обо мне</span></a>
+                <a href="/contact"><span lang="en">contact</span><span lang="ru">контакты</span></a>
+            </div>
             <form>
                 <select id="lang-switch">
                     <option value="en">EN</option>
@@ -39,15 +43,15 @@
         <div class="filters">
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> <span lang="en">Show all</span><span lang="ru">Все кейсы</span></button>
-                <button class="btn" onclick="filterSelection('branding')"> <span lang="en">Branding</span><span lang="ru">Брендинг</span></button>
                 <button class="btn" onclick="filterSelection('uiux')"> UI/UX</button>
+                <button class="btn" onclick="filterSelection('branding')"> <span lang="en">Branding</span><span lang="ru">Брендинг</span></button>
                 <button class="btn" onclick="filterSelection('catalog')"> <span lang="en">Catalog</span><span lang="ru">Каталоги</span></button>
-                <button class="btn" onclick="filterSelection('dvlp')"> <span lang="en">Development</span><span lang="ru">Разработка</span></button>
+                <!-- <button class="btn" onclick="filterSelection('dvlp')"> <span lang="en">Development</span><span lang="ru">Разработка</span></button> -->
             </div>
         </div>
 
         <div id="myUL" class="w-works">
-            <div class="w-card uiux">
+            <div class="w-card uiux" data-aos="fade-up">
                 <a href="/cls-web" class="w-card-i">
                     <img class="w-img" src="img/cls-web/12.jpg">
                 </a>
@@ -55,7 +59,7 @@
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
             </div>
 
-            <div class="w-card branding">
+            <div class="w-card branding" data-aos="fade-up">
                 <a href="/kauris-guideline" class="w-card-i">
                     <img class="w-img" src="img/kauris-guideline/1.jpg">
                 </a>
@@ -63,7 +67,7 @@
                 <button class="btn" onclick="filterSelection('branding')" style="padding: 5px 10px;"> <span lang="en">Branding</span><span lang="ru">Брендинг</span></button>
             </div>
 
-            <div class="w-card uiux">
+            <div class="w-card uiux" data-aos="fade-up">
                 <a href="/silknwool" class="w-card-i">
                     <img class="w-img" src="img/silkwool/1.jpg">
                 </a>
@@ -71,7 +75,7 @@
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
             </div>
             
-            <div class="w-card uiux">
+            <div class="w-card uiux" data-aos="fade-up">
                 <a href="/assistent" class="w-card-i">
                     <img class="w-img" src="img/assistent/1.jpg">
                 </a>
@@ -81,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="w-card catalog">
+            <div class="w-card catalog" data-aos="fade-up">
                 <a href="/medeq" class="w-card-i">
                     <img class="w-img" src="img/medeq/1.jpg">
                 </a>
@@ -89,56 +93,56 @@
                 <button class="btn" onclick="filterSelection('catalog')" style="padding: 5px 10px;"> <span lang="en">Catalog</span><span lang="ru">Каталоги</span></button>
             </div>
 
-            <div class="w-card uiux">
+            <!-- <div class="w-card uiux" data-aos="fade-up">
                 <a href="/mda" class="w-card-i">
                     <img class="w-img" src="img/mda/1.jpg">
                 </a>
                 <a href="/mda"><h3><span lang="en">MDA Shipping Web Design</span><span lang="ru">Веб-дизайн для перевозчика MDA Shipping</span></h3></a>
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
-            </div>
+            </div> -->
             
-            <div class="w-card catalog">
+            <!-- <div class="w-card catalog" data-aos="fade-up">
                 <a href="/kauris-catalog" class="w-card-i">
                     <img class="w-img" src="img/kauris-catalog/1-1.jpg">
                 </a>
                 <a href="/kauris-catalog"><h3><span lang="en">Kauris Fashion Catalog</span><span lang="ru">Каталог женской одежды для магазина Kauris</span></h3></a>
                 <button class="btn" onclick="filterSelection('catalog')" style="padding: 5px 10px;"> <span lang="en">Catalog</span><span lang="ru">Каталоги</span></button>
-            </div>
+            </div> -->
 
-            <div class="w-card uiux dvlp">
+            <!-- <div class="w-card uiux dvlp" data-aos="fade-up">
                 <a href="/pinoli" class="w-card-i">
                     <img class="w-img" src="img/pinoli/1.jpg">
                 </a>
                 <a href="/pinoli"><h3><span lang="en">Pinoli Web Design and Development</span><span lang="ru">Разработка сайта для ресторана Pinoli</span></h3></a>
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
                 <button class="btn" onclick="filterSelection('dvlp')" style="padding: 5px 10px;"> <span lang="en">Development</span><span lang="ru">Разработка</span></button>
-            </div>
+            </div> -->
 
-            <div class="w-card uiux">
+            <!-- <div class="w-card uiux" data-aos="fade-up">
                 <a href="/avansbox" class="w-card-i">
                     <img class="w-img" src="img/avansbox/10.jpg">
                 </a>
                 <a href="/avansbox"><h3><span lang="en">Avansbox Web Design</span><span lang="ru">Дизайн сайта для финансовой компании Avansbox</span></h3></a>
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
-            </div>
+            </div> -->
             
-            <div class="w-card uiux">
+            <!-- <div class="w-card uiux" data-aos="fade-up">
                 <a href="/aes" class="w-card-i">
                     <img class="w-img" src="img/aes/1.jpg">
                 </a>
                 <a href="/aes"><h3><span lang="en">American Express Shop Design</span><span lang="ru">Интернет-магазин American Express Shop</span></h3></a>
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
-            </div>
+            </div> -->
             
-            <div class="w-card uiux">
+            <!-- <div class="w-card uiux" data-aos="fade-up">
                 <a href="/a1" class="w-card-i">
                     <img class="w-img" src="img/a1/1.jpg">
                 </a>
                 <a href="/a1"><h3><span lang="en">A1-Agrohim Web Design</span><span lang="ru">Веб-дизайн для А1-Агрохим</span></h3></a>
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
-            </div>
+            </div> -->
 
-            <div class="w-card branding">
+            <div class="w-card branding" data-aos="fade-up">
                 <a href="/fanci" class="w-card-i">
                     <img class="w-img" src="img/fanci/6.jpg">
                 </a>
@@ -146,79 +150,86 @@
                 <button class="btn" onclick="filterSelection('branding')" style="padding: 5px 10px;"> <span lang="en">Branding</span><span lang="ru">Брендинг</span></button>
             </div>
 
-            <div class="w-card uiux">
+            <!-- <div class="w-card uiux" data-aos="fade-up">
                 <a href="/sharing" class="w-card-i">
                     <img class="w-img" src="img/sharing/1.png">
                 </a>
                 <a href="/sharing"><h3><span lang="en">Sharing Digital Web Design</span><span lang="ru">Веб-дизайн для агенства Sharing Digital</span></h3></a>
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
-            </div>
+            </div> -->
             
-            <div class="w-card branding">
+            <!-- <div class="w-card branding" data-aos="fade-up">
                 <a href="/babka" class="w-card-i">
                     <img class="w-img" src="img/babka/1.jpg">
                 </a>
                 <a href="/babka"><h3><span lang="en">Babka Bakery Branding</span><span lang="ru">Гайдлайн для пекарни Babka Bakery</span></h3></a>
                 <button class="btn" onclick="filterSelection('branding')" style="padding: 5px 10px;"> <span lang="en">Branding</span><span lang="ru">Брендинг</span></button>
-            </div>
+            </div> -->
             
-            <div class="w-card uiux dvlp">
+            <!-- <div class="w-card uiux dvlp" data-aos="fade-up">
                 <a href="/borosa" class="w-card-i">
                     <img class="w-img" src="img/borosa/1.jpg">
                 </a>
                 <a href="/borosa"><h3><span lang="en">Borosa Web Design and Development</span><span lang="ru">Сайт для архитектурного бюро BOROSA</span></h3></a>
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
                 <button class="btn" onclick="filterSelection('dvlp')" style="padding: 5px 10px;"> <span lang="en">Development</span><span lang="ru">Разработка</span></button>
-            </div>
+            </div> -->
 
-            <div class="w-card uiux">
+            <!-- <div class="w-card uiux" data-aos="fade-up">
                 <a href="/otoplenych" class="w-card-i">
                     <img class="w-img" src="img/otoplenych/1.jpg">
                 </a>
                 <a href="/otoplenych"><h3><span lang="en">Otoplenych Web Design</span><span lang="ru">Веб-дизайн для компании Отопленыч</span></h3></a>
                 <button class="btn" onclick="filterSelection('uiux')" style="padding: 5px 10px;"> UI/UX</button>
-            </div>
+            </div> -->
 
-            <div class="w-card branding">
+            <!-- <div class="w-card branding" data-aos="fade-up">
                 <a href="/cls" class="w-card-i">
                     <img class="w-img" src="img/cls/main.jpg">
                 </a>
                 <a href="/cls"><h3><span lang="en">Coleman Legal Services Brand Guidelines</span><span lang="ru">Гайдлайн для Coleman Legal Services</span></h3></a>
                 <button class="btn" onclick="filterSelection('branding')" style="padding: 5px 10px;"> <span lang="en">Branding</span><span lang="ru">Брендинг</span></button>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <div class="footer so-row">
-        <div class="foo-desc">
-            <h1><span lang="en">Contact me<br>& Let's work together</span>
-                <span lang="ru">Напишите мне<br>и мы начнем создавать</span></h1>
-                <!-- <span>☺</span> -->
-        </div>
-
-        <div class="foo-info">
-            <div class="foo-contact">
-                <div><a href="https://t.me/makotty"><img src="img/telegram.svg">Telegram</a></div>
-                <div><a href="https://wa.me/79110180255"><img src="img/whatsapp.svg">WhatsApp</a></div>
-                <div><a href="tel:+79110180255"><img src="img/phone.svg">+7 911 018 02 55</a></div>
-            </div>
-
-            <div class="foo-links">
-                <p><span lang="en">Saint Petersburg, Russia</span>
-                    <span lang="ru">Санкт-Петербург, Россия</span></p>
-                <div class="foo-links-row">
-                    <a href="https://www.behance.net/yarova0mar0675">Behance</a>
-                    <a href="https://dribbble.com/mari_rina">Dribble</a>
+        <div class="foo-cont">
+            <div class="foo-desc">
+                <h1><span lang="en">Have a project in mind?<br><span style="color: #fff;">contact me ↴</span></span>
+                    <span lang="ru">Хотите создать проект?<br><span style="color: #fff;">напишите мне ↴</span></span></h1>
+                
+                <div class="foo-behance">
+                    <a href="https://www.behance.net/yarova0mar0675"><img src="img/behance.png"></a>
+                    <a href="https://www.behance.net/yarova0mar0675">/ Behance</a>
                 </div>
             </div>
 
-        </div>
+            <div class="foo-contact">
+                <div class="foo-text">
+                    <p><span lang="en">Contacts</span><span lang="ru">Контакты</span></p>
+                    <div class="foo-links">
+                        <a href="https://t.me/makotty">Telegram</a>
+                        <a href="https://wa.me/79110180255">WhatsApp</a>
+                        <a href="tel:+79110180255">+7 911 018 02 55</a>
+                    </div>
+                </div>
 
-        <div class="copyright">
-            <p><span lang="en">Designed & Developed by Maridmi © 2024</span>
-                <span lang="ru">Дизайн и разработка от Maridmi © 2024</span></p>
+                <div class="foo-text">
+                    <p><span lang="en">Developed<br>and Designed</span><span lang="ru">Разработка<br>и дизайн</span></p>
+                    <div  class="foo-links">
+                        <a href="/about">Marina Orlova</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <h1>© 2024</h1>
+            </div>
         </div>
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow-top.png"></button>
 
     <script>
         filterSelection("all")
@@ -263,6 +274,11 @@
           });
         }
     </script>
+    
+    <script>
+        AOS.init();
+    </script>
+
     <script src="js/script.js"></script>
 </body>
 </html>

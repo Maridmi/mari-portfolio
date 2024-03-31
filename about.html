@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Services</title>
+    <title>About</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="shortcut icon" href="img/navlogo.png" type="image/x-icon">
 </head>
 
@@ -18,9 +18,11 @@
     <div class="topnav so-row">
         <a href="/"><img src="img/navlogo.svg"></a>
         <div class="navlist">
-            <a href="/work"><span lang="en">work</span><span lang="ru">работы</span></a>
-            <a href="/services"><span lang="en">services</span><span lang="ru">услуги</span></a>
-            <a href="/contact"><span lang="en">contact</span><span lang="ru">контакты</span></a>
+            <div class="nav-links">
+                <a href="/work"><span lang="en">works</span><span lang="ru">проекты</span></a>
+                <a href="/about"><span lang="en">about</span><span lang="ru">обо мне</span></a>
+                <a href="/contact"><span lang="en">contact</span><span lang="ru">контакты</span></a>
+            </div>
             <form>
                 <select id="lang-switch">
                     <option value="en">EN</option>
@@ -165,35 +167,46 @@
     </div>
 
     <div class="footer so-row">
-        <div class="foo-desc">
-            <h1><span lang="en">Contact me<br>& Let's work together</span>
-                <span lang="ru">Напишите мне<br>и мы начнем создавать</span></h1>
-                <!-- <span>☺</span> -->
-        </div>
-
-        <div class="foo-info">
-            <div class="foo-contact">
-                <div><a href="https://t.me/makotty"><img src="img/telegram.svg">Telegram</a></div>
-                <div><a href="https://wa.me/79110180255"><img src="img/whatsapp.svg">WhatsApp</a></div>
-                <div><a href="tel:+79110180255"><img src="img/phone.svg">+7 911 018 02 55</a></div>
-            </div>
-
-            <div class="foo-links">
-                <p><span lang="en">Saint Petersburg, Russia</span>
-                    <span lang="ru">Санкт-Петербург, Россия</span></p>
-                <div class="foo-links-row">
-                    <a href="https://www.behance.net/yarova0mar0675">Behance</a>
-                    <a href="https://dribbble.com/mari_rina">Dribble</a>
+        <div class="foo-cont">
+            <div class="foo-desc">
+                <h1><span lang="en">Have a project in mind?<br><span style="color: #fff;">contact me ↴</span></span>
+                    <span lang="ru">Хотите создать проект?<br><span style="color: #fff;">напишите мне ↴</span></span></h1>
+                
+                <div class="foo-behance">
+                    <a href="https://www.behance.net/yarova0mar0675"><img src="img/behance.png"></a>
+                    <a href="https://www.behance.net/yarova0mar0675">/ Behance</a>
                 </div>
             </div>
 
-        </div>
+            <div class="foo-contact">
+                <div class="foo-text">
+                    <p><span lang="en">Contacts</span><span lang="ru">Контакты</span></p>
+                    <div class="foo-links">
+                        <a href="https://t.me/makotty">Telegram</a>
+                        <a href="https://wa.me/79110180255">WhatsApp</a>
+                        <a href="tel:+79110180255">+7 911 018 02 55</a>
+                    </div>
+                </div>
 
-        <div class="copyright">
-            <p><span lang="en">Designed & Developed by Maridmi © 2024</span>
-                <span lang="ru">Дизайн и разработка от Maridmi © 2024</span></p>
+                <div class="foo-text">
+                    <p><span lang="en">Developed<br>and Designed</span><span lang="ru">Разработка<br>и дизайн</span></p>
+                    <div  class="foo-links">
+                        <a href="/about">Marina Orlova</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <h1>© 2024</h1>
+            </div>
         </div>
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow-top.png"></button>
+
+    <script>
+        AOS.init();
+    </script>
 
     <script src="js/script.js"></script>
 </body>
