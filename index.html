@@ -8,6 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/navlogo.png" type="image/x-icon">
 </head>
@@ -16,9 +18,11 @@
     <div class="topnav so-row">
         <a href="/"><img src="img/navlogo.svg"></a>
         <div class="navlist">
-            <a href="/work"><span lang="en">works</span><span lang="ru">проекты</span></a>
-            <a href="/about"><span lang="en">about</span><span lang="ru">обо мне</span></a>
-            <a href="/contact"><span lang="en">contact</span><span lang="ru">контакты</span></a>
+            <div class="nav-links">
+                <a href="/work"><span lang="en">works</span><span lang="ru">проекты</span></a>
+                <a href="/about"><span lang="en">about</span><span lang="ru">обо мне</span></a>
+                <a href="/contact"><span lang="en">contact</span><span lang="ru">контакты</span></a>
+            </div>
             <form>
                 <select id="lang-switch">
                     <option value="en">EN</option>
@@ -37,14 +41,14 @@
         </div>
         <h1 id="show-invisible"><span lang="en">I do <span class="h-color">UI/UX</span> and <span class="h-color">branding</span></span><span lang="ru">для сайтов и брендов</span></h1>
         <p id="invisible">scroll down</p>
-        <div class="greet-works">
-            <a href="/works"><img src="img/medeq/1.jpg"></a>
+        <div class="greet-works" data-aos="fade-up">
+            <a href="/works"><img src="img/cases_medeq_1.png"></a>
             <a href="/works"><span lang="en">/ selected<br>works<span style="font-size: 28px;">↴</span></span><span lang="ru">/ избранные<br>проекты<span style="font-size: 28px;">↴</span></span></a>
         </div>
     </div>
 
     <div class="advantages">
-        <div class="advantages-text so-row">
+        <div class="advantages-text so-row" data-aos="fade-up">
             <div class="advantages-right">
                 <p><span lang="en">Good design serves a purpose, communicates a message, and is aesthetically pleasing at the same time. Design is everywhere and that's why it's important to make it good. <br><br>My mission is to find design solutions that help to achieve the goals of clients and, ultimately, grow the business.</span>
                     <span lang="ru">Хороший дизайн служит цели, передает посыл и эстетику компании. <br>Дизайн повсюду, именно поэтому важно сделать его хорошим. <br><br>Моя миссия — находить дизайнерские решения, которые помогают достигать целей клиентов и, в конечном итоге, развивать бизнес.</span></p>
@@ -94,9 +98,10 @@
         </div>
 
         <div class="more-works so-row">
-            <div class="more-works-card">
+            <div class="more-works-card" data-aos="fade-up">
                 <a href="/silknwool">
-                    <img id="img1" src="img/silkwool/1.jpg">
+                    <img id="img1" src="img/silkwool/0.jpg">
+                    <!-- <img class="img-h-1" src="img/silkwool/4.jpg"> -->
                 </a>
                 <div class="more-works-text">
                     <a href="/silknwool"><span lang="en">Silk and Wool Web Design</span><span lang="ru">Веб-дизайн для магазина Шерсть и Шелк</span></a>
@@ -104,9 +109,10 @@
                 </div>
             </div>
             
-            <div class="more-works-card">
+            <div class="more-works-card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <a href="/assistent">
-                    <img id="img2" src="img/assistent/3.jpg">
+                    <img id="img2" src="img/assistent/7.jpg">
+                    <!-- <img class="img-h-2" src="img/assistent/4.jpg"> -->
                 </a>
                 <div class="more-works-text">
                     <a href="/assistent"><span lang="en">Assistent Plus Web Design</span><span lang="ru">Веб-дизайн для компании Ассистент Плюс</span></a>
@@ -116,166 +122,93 @@
         </div>
     </div>
 
-    <div class="services so-row">
-        <div class="services-text">
-            <h2>Services <span>I do offer</span></h2>
-            <p class="services-p">Some of the fields in which I stand out are UI/UX, branding, graphic and editorial design. I love clean typography, white spaces and minimalism. <br><br>If you're a startup looking for a designer or have some interesting ideas in mind, <br>get in touch.</p>
-        </div>
-
-        <div class="services-cards">
-            <a href="/services">
-            <div class="card">
-                <img src="img/web.png">
-                <div>
-                    <p>learn more</p>
-                    <h3>Web Design</h3>
-                </div>
-            </div>
-            </a>
-
-            <a href="/services">
-            <div class="card">
-                <img src="img/logo.png">
-                <div>
-                    <p>learn more</p>
-                    <h3>Branding</h3>
-                </div>
-            </div>
-            </a>
-
-            <a href="/services">
-            <div class="card">
-                <img src="img/brand.png">
-                <div>
-                    <p>learn more</p>
-                    <h3>Graphic design</h3>
-                </div>
-            </div>
-            </a>
-
-            <a href="/services">
-            <div class="card">
-                <img src="img/card.png">
-                <div>
-                    <p>learn more</p>
-                    <h3>Catalogs & Presentations</h3>
-                </div>
-            </div>
-            </a>
-        </div>
-    </div>
-
     <div class="explore-more so-row">
-        <p class="annotation">EXPLORE MORE</p>
+        <div class="explore-anno" data-aos="fade-up">
+            <p>EXPLORE MORE</p> 
+            <a href="/work"><span lang="en">VIEW ALL CASES <span style="font-size: 24px;"> ↘</span></span><span lang="ru">СМОТРЕТЬ ВСЕ <span style="font-size: 24px;"> ↘</span></span></a>
+        </div>
 
-        <div class="explore-cont">
-
-
+        <div class="explore-cont" data-aos="fade-up">
             <div class="explore-work">
                 <hr>
-                <a href="/mda">
-                    <div id="exp-1" class="exp-1">
-                        <h1>MDA Express Web Design</h1>
-                        <h4>UI/UX</h4>
+                <a href="/fanci">
+                    <div class="exp">
+                        <h1><span lang="en">Fanci Maison Guideline</span><span lang="ru">Гайдлайн для Fanci Maison</span></h1>
+                        <button class="btn"><span lang="en">Branding</span><span lang="ru">Брендинг</span></button>
                     </div>
-                    <img src="img/mda/1.jpg" class="follow-img-1">
+                    <!-- <img src="img/mda/1.jpg" class="follow-img-1"> -->
                 </a>
             </div>
 
-
-            <div class="explore-work">
+            <div class="explore-work" data-aos="fade-up">
                 <hr>
                 <a href="/cls-web">
-                    <div class="exp-2">
-                        <h1>Coleman Legal Web Design</h1>
-                        <h4>UI/UX</h4>
+                    <div class="exp">
+                        <h1><span lang="en">Coleman Legal Web Design</span><span lang="ru">Веб-дизайн для Coleman Legal</span></h1>
+                        <button class="btn"> UI/UX</button>
                     </div>
-                    <img src="img/cls-web/4.jpg" class="follow-img-2">
+                    <!-- <img src="img/cls-web/4.jpg" class="follow-img-2"> -->
                 </a>
             </div>
 
-            <div class="explore-work">
+            <div class="explore-work" data-aos="fade-up">
                 <hr>
-                <a href="/kauris-catalog">
-                    <div class="exp-3">
-                        <h1>Kauris Fashion Catalog</h1>
-                        <h4>Catalog</h4>
+                <a href="/kauris-guideline">
+                    <div class="exp">
+                        <h1><span lang="en">Kauris Guideline</span><span lang="ru">Гайдлайн для Kauris</span></h1>
+                        <button class="btn"><span lang="en">Branding</span><span lang="ru">Брендинг</span></button>
                     </div>
-                    <img src="img/kauris-catalog/1.jpg" class="follow-img-3">
+                    <!-- <img src="img/kauris-catalog/1.jpg" class="follow-img-3"> -->
                 </a>
                 <hr>
             </div>
-        </div>
-
-        <div class="explore-button-cont">
-            <a href="/work">
-                <button class="explore-button">VIEW MORE</button>
-            </a>
         </div>
     </div>
 
     <script>
-        let cursor = document.querySelector(".follow-img-1");
-        document.addEventListener("mousemove", (e) => {
-
-        let x = e.clientX;
-        let y = e.clientY;
-
-        cursor.style.left = `${x}px`;
-        cursor.style.top = `${y}px`;
-        })
-
-        let cursor1 = document.querySelector(".follow-img-2");
-        document.addEventListener("mousemove", (e) => {
-
-        let x1 = e.clientX;
-        let y1 = e.clientY;
-
-        cursor.style.left = `${x1}px`;
-        cursor.style.top = `${y1}px`;
-        })
-
-        let cursor2 = document.querySelector(".follow-img-3");
-        document.addEventListener("mousemove", (e) => {
-
-        let x2 = e.clientX;
-        let y2 = e.clientY;
-
-        cursor.style.left = `${x2}px`;
-        cursor.style.top = `${y2}px`;
-        })
     </script>
 
-<div class="footer so-row">
-    <div class="foo-desc">
-        <h1><span lang="en">Contact me<br>& Let's work together</span>
-            <span lang="ru">Напишите мне<br>и мы начнем создавать</span></h1>
-            <!-- <span>☺</span> -->
-    </div>
+    <div class="footer so-row">
+        <div class="foo-cont">
+            <div class="foo-desc">
+                <h1><span lang="en">Have a project in mind?<br><span style="color: #fff;">contact me ↴</span></span>
+                    <span lang="ru">Хотите создать проект?<br><span style="color: #fff;">напишите мне ↴</span></span></h1>
+                
+                <div class="foo-behance">
+                    <a href="https://www.behance.net/yarova0mar0675"><img src="img/behance.png"></a>
+                    <a href="https://www.behance.net/yarova0mar0675">/ Behance</a>
+                </div>
+            </div>
 
-    <div class="foo-info">
-        <div class="foo-contact">
-            <div><a href="https://t.me/makotty"><img src="img/telegram.svg">Telegram</a></div>
-            <div><a href="https://wa.me/79110180255"><img src="img/whatsapp.svg">WhatsApp</a></div>
-            <div><a href="tel:+79110180255"><img src="img/phone.svg">+7 911 018 02 55</a></div>
-        </div>
+            <div class="foo-contact">
+                <div class="foo-text">
+                    <p>Контакты</p>
+                    <div class="foo-links">
+                        <a href="https://t.me/makotty">Telegram</a>
+                        <a href="https://wa.me/79110180255">WhatsApp</a>
+                        <a href="tel:+79110180255">+7 911 018 02 55</a>
+                    </div>
+                </div>
 
-        <div class="foo-links">
-            <p><span lang="en">Saint Petersburg, Russia</span>
-                <span lang="ru">Санкт-Петербург, Россия</span></p>
-            <div class="foo-links-row">
-                <a href="https://www.behance.net/yarova0mar0675">Behance</a>
-                <a href="https://dribbble.com/mari_rina">Dribble</a>
+                <div class="foo-text">
+                    <p>Разработка<br>и дизайн</p>
+                    <div  class="foo-links">
+                        <a href="/about">Marina Orlova</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <h1>© 2024</h1>
             </div>
         </div>
-
     </div>
 
-    <div class="copyright">
-        <p><span lang="en">Designed & Developed by Maridmi © 2024</span>
-            <span lang="ru">Дизайн и разработка от Maridmi © 2024</span></p>
-    </div>
-</div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/arrow-top.png"></button>
+
+    <script>
+        AOS.init();
+    </script>
 
     <script src="js/script.js"></script>
 </body>
